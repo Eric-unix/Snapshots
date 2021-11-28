@@ -27,4 +27,26 @@
         app:layout_constraintEnd_toStartOf="@id/btnDelete"
         app:layout_constraintTop_toTopOf="@id/btnDelete"
         app:layout_constraintBottom_toBottomOf="@id/btnDelete"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cbLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/ic_thumb_up"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintDimensionRatio="H,4:3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDelete"
+        app:layout_constraintBottom_toTopOf="@id/cbLike"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
