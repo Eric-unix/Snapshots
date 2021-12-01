@@ -6,7 +6,9 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import android.widget.Adapter
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.snapshots.databinding.ActivityMainBinding
 import com.example.snapshots.databinding.FragmentHomeBinding
@@ -29,6 +31,7 @@ private const val ARG_PARAM2 = "param2"
 class HomeFragment : Fragment() {
     private lateinit var mBinding:  FragmentHomeBinding
     private lateinit var mFirebaseAdapter: FirebaseRecyclerAdapter<Snapshot,SnapshotHolder>
+    private lateinit var mLayoutManager:
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
